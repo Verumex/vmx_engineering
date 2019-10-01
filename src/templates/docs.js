@@ -39,7 +39,7 @@ injectGlobal`
 
   a {
     transition: color 0.15s;
-    color: #663399;
+    color: #004499;
   }
 `;
 
@@ -80,6 +80,7 @@ export default class MDXRuntimeTest extends Component {
       }
     } = data;
     const gitHub = require('../components/images/github.svg');
+    const realProgrammers = require('../components/images/real_programmers.png');
 
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)

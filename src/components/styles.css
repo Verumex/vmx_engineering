@@ -61,7 +61,7 @@ body {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: #542683;
+  background-color: #011d40;
 }
 
 .headerWrapper {
@@ -130,6 +130,10 @@ body {
   color: black;
   font-size: 14px;
 }
+.headerTitle {
+  margin-top: -3px;
+  padding-left: 12px;
+}
 .headerTitle a {
   color: #fff;
 }
@@ -159,7 +163,7 @@ body {
 
 /* Header section starts here */
 .navBarDefault {
-  background-color: #372476;
+  background-color: #0c2340;
   border-radius: 0;
   border-top: 0;
   margin-bottom: 0;
@@ -179,7 +183,7 @@ body {
 }
 .navBarBrand {
   height: auto;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.5;
   font-weight: 500;
   color: #fff !important;
@@ -323,14 +327,14 @@ pre {
 }
 
 .hideFrontLine  .active >a{
-  background-color: #542683;
+  background-color: #8e989f;
   color: #fff !important;
 }
 .firstLevel ul li .collapser svg path {
   fill: #fff !important;
 }
 .active .collapser >svg >path {
-  fill: #663399 !important;
+  fill: #8e989f;
 }
 
 .firstLevel ul .item ul .item {
@@ -351,15 +355,15 @@ pre {
   padding-left: 15px;
 }
 .sideBarUL .item>a:hover {
-  background-color: #542683;
+  background-color: #8e989f;
   color: #fff !important;
 }
 .showFrontLine .item >a:hover {
-  background-color: #542683;
+  background-color: #8e989f;
 }
 .showFrontLine .active >a {
   color: #fff;
-  background-color: #473485;
+  background-color: #8e989f;
 }
 
 .sideBarUL  .item .item{
@@ -398,7 +402,7 @@ pre {
   font-size: 32px;
   line-height: 1.5;
   font-weight: 500;
-  border-left: 2px solid rgb(116, 76, 188);
+  border-left: 2px solid #004499;
   padding: 0 16px;
   flex: 1;
   margin-top: 0;
@@ -538,13 +542,13 @@ pre {
 }
 
 .nextBtn:hover, .previousBtn:hover {
-  color: rgb(116, 76, 188);
+  color: #004499;
   text-decoration: none;
-  border: 1px solid rgb(116, 76, 188);
+  border: 1px solid #004499;
 }
 
 .nextBtn:hover .rightArrow, .previousBtn:hover .leftArrow {
-  color: rgb(116, 76, 188);
+  color: #004499;
 }
 
 /* tables.css */

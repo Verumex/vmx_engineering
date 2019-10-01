@@ -26,12 +26,20 @@ const plugins = [
           resolve: 'gatsby-remark-copy-linked-files'
         }
       ],
-      extensions: [".mdx", ".md"]
+      extensions: [".mdx", ".md"],
+      plugins: ["gatsby-remark-images"]
     }
   },
   'gatsby-plugin-emotion',
   'gatsby-plugin-remove-trailing-slashes',
   'gatsby-plugin-react-helmet',
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: `${__dirname}/src/components/images`,
+    },
+  },
   {
     resolve: "gatsby-source-filesystem",
     options: {

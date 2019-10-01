@@ -4,6 +4,7 @@ import config from "../config";
 
 export default class HTML extends React.Component {
   render() {
+    const favicon = require('./components/images/favicon-32x32.png');
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -20,9 +21,7 @@ export default class HTML extends React.Component {
           {config.siteMetadata.ogImage ? 
             (<meta property="twitter:image" content={config.siteMetadata.ogImage} />) : null
           }
-          {config.siteMetadata.favicon ?
-            (<link rel="shortcut icon" type="image/svg" href={config.siteMetadata.favicon} />) : null
-          }
+          <link rel="shortcut icon" type="image/svg" href={favicon} />
           <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossOrigin="anonymous" />
