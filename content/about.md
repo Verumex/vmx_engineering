@@ -11,7 +11,7 @@ industry does business.
 
 ## The Platform
 
-To this end we built the [VmX Platform](https://platform.verumex.com), the
+To this end we built the [VmX Platform](/platform), the
 definitive destination for real asset data. We primarily leverage Ruby on Rails
 6 and ReactJS for our server and client logic respectively, and serve the
 application via geographically distributed AWS hardware. See the

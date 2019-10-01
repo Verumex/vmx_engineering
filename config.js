@@ -31,7 +31,7 @@ const config = {
       "/design_patterns",
     ],
     "links": [
-      { "text": "VmX Platform", "link": "https://platform.veruemx.com"},
+      { "text": "Anvil", "link": "https://www.anvil.no"},
     ],
     "frontline": false,
     "ignoreIndex": true,
