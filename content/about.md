@@ -17,7 +17,7 @@ definitive destination for real asset data. We primarily leverage Ruby on Rails
 application via geographically distributed AWS hardware. See the
 [Platform](/platform) section for more information.
 
-![Gallery Screenshot](../src/components/images/gallery.png)
+![Gallery Screenshot](../src/components/images/gallery.jpg)
 
 ## Company Origin
 
