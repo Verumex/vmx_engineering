@@ -46,7 +46,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
   }
 `;
 
-const sidebarBaseColor = "#052752";
+const sidebarBaseColor = "#052e61";
 const sidebarDarkColor = "#011d40";
 const Sidebar = styled('aside')`
   width: 100%;
