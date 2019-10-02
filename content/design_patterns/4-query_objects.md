@@ -1,6 +1,6 @@
 ---
 title: "Query Objects"
-metaTitle: "How we use Query Objects"
+metaTitle: "VmX Engineering | Query Objects"
 ---
 
 We use query objects extensively at VmX. Like decorators, query objects have

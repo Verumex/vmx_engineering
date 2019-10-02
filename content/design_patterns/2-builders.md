@@ -1,6 +1,6 @@
 ---
 title: "Builders"
-metaTitle: "Builders | A case for builder objects"
+metaTitle: "VmX Engineering | Builder Objects"
 ---
 
 When markup becomes sufficiently complicated and needs to be generated based on

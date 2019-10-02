@@ -1,6 +1,6 @@
 ---
 title: "Playbook"
-metaTitle: "Playbook | How we write software"
+metaTitle: "VmX Engineering | Playbook"
 ---
 
 Over years of client projects at Lockstep we developed a robust

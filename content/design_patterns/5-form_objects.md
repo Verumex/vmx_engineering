@@ -1,6 +1,6 @@
 ---
 title: "Form Objects"
-metaTitle: "How we use Form Objects"
+metaTitle: "VmX Engineering | Form Objects"
 ---
 
 Our team has long been sympathetic to the widespread concerns around

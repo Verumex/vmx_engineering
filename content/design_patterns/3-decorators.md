@@ -1,6 +1,6 @@
 ---
 title: "Decorators"
-metaTitle: "Decorators and Presenters"
+metaTitle: "VmX Engineering | Decorators and Presenters"
 ---
 
 ## Decorators

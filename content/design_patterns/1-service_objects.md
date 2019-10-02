@@ -1,6 +1,6 @@
 ---
 title: "Service Objects"
-metaTitle: "How we use service objects"
+metaTitle: "VmX Engineering | Service Objects"
 ---
 
 Many times refactoring code out of a controller, worker or rake task means

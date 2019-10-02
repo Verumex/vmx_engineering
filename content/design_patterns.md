@@ -1,6 +1,6 @@
 ---
 title: "Design Patterns"
-metaTitle: "Patterns we use throughout the VmX Platform"
+metaTitle: "VmX Engineering | Design Patterns We Use"
 ---
 
 At VmX we take the concept of convention over configuration seriously, and

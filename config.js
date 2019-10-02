@@ -29,9 +29,11 @@ const config = {
       "/platform",
       "/playbook",
       "/design_patterns",
+      "/testing",
     ],
     "links": [
       { "text": "Anvil", "link": "https://www.anvil.no"},
+      { "text": "Lockstep", "link": "https://github.com/lockstep"},
     ],
     "frontline": false,
     "ignoreIndex": true,
