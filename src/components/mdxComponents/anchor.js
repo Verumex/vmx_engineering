@@ -1,13 +1,19 @@
-import * as React from "react";
+import React from "react";
+import isAbsoluteUrl from "is-absolute-url";
+import { Link } from "gatsby";
 
 const AnchorTag = ({ children: link, ...props }) => {
-  if(link) {
-    return (
-      <a href={props.href} target="_blank">{link}</a>
-    );
-  } else {
-    return null;
-  }
+  const { href } = props;
+
+  return isAbsoluteUrl(href) ? (
+    <a href={href} target="_blank">
+      {link}
+    </a>
+  ) : (
+    <Link to={href} {...props}>
+      {link}
+    </Link>
+  );
 };
 
 export default AnchorTag;
