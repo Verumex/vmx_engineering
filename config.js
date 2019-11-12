@@ -24,6 +24,7 @@ const config = {
     forcedNavOrder: [
       "/about",
       "/team",
+      "/careers",
       "/platform",
       "/playbook",
       "/design_patterns",
