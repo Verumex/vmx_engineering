@@ -5,7 +5,7 @@ import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer";
 import styled, { injectGlobal } from "react-emotion";
 import { Layout, Link } from "$components";
 import NextPrevious from "../components/NextPrevious";
-import "../components/styles.css";
+import "../components/styles.scss";
 import config from "../../config";
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
@@ -76,8 +76,8 @@ export default class MDXRuntimeTest extends Component {
       allMdx,
       mdx,
       site: {
-        siteMetadata: { docsLocation, title }
-      }
+        siteMetadata: { docsLocation, title },
+      },
     } = data;
     const gitHub = require("../components/images/github.svg");
     const realProgrammers = require("../components/images/real_programmers.png");
@@ -110,9 +110,7 @@ export default class MDXRuntimeTest extends Component {
       .concat(navItems.items)
       .map(slug => {
         if (slug) {
-          const { node } = allMdx.edges.find(
-            ({ node }) => node.fields.slug === slug
-          );
+          const { node } = allMdx.edges.find(({ node }) => node.fields.slug === slug);
 
           return { title: node.fields.title, url: node.fields.slug };
         }
@@ -123,9 +121,7 @@ export default class MDXRuntimeTest extends Component {
     const metaDescription = mdx.frontmatter.metaDescription;
     let canonicalUrl = config.gatsby.siteUrl;
     canonicalUrl =
-      config.gatsby.pathPrefix !== "/"
-        ? canonicalUrl + config.gatsby.pathPrefix
-        : canonicalUrl;
+      config.gatsby.pathPrefix !== "/" ? canonicalUrl + config.gatsby.pathPrefix : canonicalUrl;
     canonicalUrl = canonicalUrl + mdx.fields.slug;
 
     return (
@@ -133,16 +129,10 @@ export default class MDXRuntimeTest extends Component {
         <Helmet>
           {metaTitle ? <title>{metaTitle}</title> : null}
           {metaTitle ? <meta name="title" content={metaTitle} /> : null}
-          {metaDescription ? (
-            <meta name="description" content={metaDescription} />
-          ) : null}
+          {metaDescription ? <meta name="description" content={metaDescription} /> : null}
           {metaTitle ? <meta property="og:title" content={metaTitle} /> : null}
-          {metaDescription ? (
-            <meta property="og:description" content={metaDescription} />
-          ) : null}
-          {metaTitle ? (
-            <meta property="twitter:title" content={metaTitle} />
-          ) : null}
+          {metaDescription ? <meta property="og:description" content={metaDescription} /> : null}
+          {metaTitle ? <meta property="twitter:title" content={metaTitle} /> : null}
           {metaDescription ? (
             <meta property="twitter:description" content={metaDescription} />
           ) : null}
