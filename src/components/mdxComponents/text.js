@@ -1,8 +1,8 @@
-import system from "system-components/emotion";
+import system from "@rebass/components";
 
 const Text = system(
   {
-    m: 0
+    m: 0,
   },
   "space",
   "color",

@@ -1,11 +1,11 @@
-import system from "system-components/emotion";
+import system from "@rebass/components";
 
 const Pre = system(
   {
     is: "pre",
     fontSize: 1,
     // fontFamily: "mono",
-    m: 0
+    m: 0,
   },
   {
     overflow: "auto",
