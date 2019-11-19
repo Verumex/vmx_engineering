@@ -600,6 +600,8 @@ img {
   font-size: 16px;
   padding: 10px 0px;
   padding-left: 15px;
+  // Prevent shifting layout while the button loads.
+  min-height: 42px;
 }
 .githubBtn span span {
   display: flex;

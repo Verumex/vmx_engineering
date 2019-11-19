@@ -128,10 +128,10 @@ const Header = ({ location }) => (
                     <GitHubButton
                       href={githubUrl}
                       data-show-count="true"
+                      data-text="Star"
                       aria-label="Star on GitHub"
-                    >
-                      Star
-                    </GitHubButton>
+                      title="Star on GitHub"
+                    ></GitHubButton>
                   </li>
                 ) : null}
               </ul>
