@@ -321,7 +321,7 @@ pre {
   z-index: 1;
 }
 
-.hideFrontLine .active > a {
+.hideFrontLine a.active {
   background-color: #8e989f;
   color: #fff !important;
 }
@@ -356,7 +356,7 @@ pre {
 .showFrontLine .item > a:hover {
   background-color: #8e989f;
 }
-.showFrontLine .active > a {
+.showFrontLine a.active {
   color: #fff;
   background-color: #8e989f;
 }
@@ -376,7 +376,7 @@ pre {
   width: calc(100% - 16px) !important;
 }
 
-.showFrontLine .item .active > a {
+.showFrontLine .item > a.active {
   border-color: rgb(230, 236, 241) !important;
   border-style: solid none solid solid;
   border-width: 1px 0px 1px 1px;
