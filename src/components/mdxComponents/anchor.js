@@ -6,7 +6,7 @@ const AnchorTag = ({ children: link, ...props }) => {
   const { href } = props;
 
   return isAbsoluteUrl(href) ? (
-    <a href={href} target="_blank">
+    <a href={href} target="_blank" rel="noopener">
       {link}
     </a>
   ) : (

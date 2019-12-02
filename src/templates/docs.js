@@ -162,6 +162,7 @@ export default class MDXRuntimeTest extends Component {
               className={"gitBtn"}
               to={`${docsLocation}/${mdx.parent.relativePath}`}
               target="_blank"
+              rel="noopener"
             >
               <img src={gitHub} alt={"Github logo"} /> Edit on GitHub
             </Link>
