@@ -41,7 +41,7 @@ const config = {
     title: "VmX Engineering",
     description:
       "Get to know the team and methodology behind the VmX Platform.",
-    ogImage: null,
+    ogImage: "/verumex.png",
     docsLocation:
       "https://github.com/verumex/vmx_engineering/tree/master/content",
   },

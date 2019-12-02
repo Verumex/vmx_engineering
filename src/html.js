@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import config from "../config";
 
 export default class HTML extends React.Component {
   render() {
@@ -14,16 +13,6 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          {config.siteMetadata.ogImage ? (
-            <meta property="og:image" content={config.siteMetadata.ogImage} />
-          ) : null}
-          <meta property="twitter:card" content="summary_large_image" />
-          {config.siteMetadata.ogImage ? (
-            <meta
-              property="twitter:image"
-              content={config.siteMetadata.ogImage}
-            />
-          ) : null}
           <link rel="shortcut icon" type="image/svg" href={favicon} />
           <link
             rel="preload"

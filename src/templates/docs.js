@@ -77,11 +77,10 @@ export default class MDXRuntimeTest extends Component {
       allMdx,
       mdx,
       site: {
-        siteMetadata: { docsLocation, title },
+        siteMetadata: { docsLocation, ogImage, siteUrl },
       },
     } = data;
     const gitHub = require("../components/images/github.svg");
-    const realProgrammers = require("../components/images/real_programmers.png");
 
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)
@@ -129,6 +128,10 @@ export default class MDXRuntimeTest extends Component {
         : canonicalUrl;
     canonicalUrl = canonicalUrl + mdx.fields.slug;
 
+    const seo = {
+      image: `${siteUrl}${ogImage}`,
+    };
+
     return (
       <Layout {...this.props}>
         <Helmet>
@@ -147,6 +150,9 @@ export default class MDXRuntimeTest extends Component {
           {metaDescription ? (
             <meta property="twitter:description" content={metaDescription} />
           ) : null}
+          <meta property="og:image" content={seo.image} />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:image" content={seo.image} />
           <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <div className={"titleWrapper"}>
@@ -177,6 +183,8 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        ogImage
+        siteUrl
         docsLocation
       }
     }
