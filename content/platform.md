@@ -35,9 +35,9 @@ high levels of complexity can be hard to justify.
 
 Excluding views and CSS the summary output from `rails stats` is:
 
-|   Lines   |    LOC    |  Classes  |  Methods  |  M/C  |  LOC/M  |
-|----------:|----------:|----------:|----------:|------:|--------:|
-|    29,545 |    21,680 |       441 |      1611 |     3 |      11 |
+|  Lines |    LOC | Classes | Methods |  M/C | LOC/M |
+| -----: | -----: | ------: | ------: | ---: | ----: |
+| 29,545 | 21,680 |     441 |    1611 |    3 |    11 |
 
 - Code LOC: 14,530
 - Test LOC: 7,150
@@ -50,6 +50,8 @@ Excluding views and CSS the summary output from `rails stats` is:
 - Top 10 slowest examples: 37 seconds, 18% of total time
 
 ### Code Climate
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/652fc0d54ce717aa5892/maintainability)](https://codeclimate.com/repos/5c337d69b30e33026d00f49e/maintainability)
 
 ![Code Climate](../src/components/images/code_climate.png)
 
