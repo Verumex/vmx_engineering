@@ -207,7 +207,7 @@ export const pageQuery = graphql`
         metaDescription
       }
     }
-    allMdx {
+    allMdx(filter: { frontmatter: { isHidden: { ne: true } } }) {
       edges {
         node {
           fields {
