@@ -48,7 +48,7 @@ const SidebarLayout = ({ location }) => (
   <StaticQuery
     query={graphql`
       query {
-        allMdx {
+        allMdx(filter: { frontmatter: { isHidden: { ne: true } } }) {
           edges {
             node {
               fields {
@@ -61,7 +61,6 @@ const SidebarLayout = ({ location }) => (
       }
     `}
     render={({ allMdx }) => {
-      let navItems = [];
       let finalNavItems;
       if (allMdx.edges !== undefined && allMdx.edges.length > 0) {
         const navItems = allMdx.edges.map((item, index) => {

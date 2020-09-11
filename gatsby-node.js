@@ -9,7 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMdx {
+            allMdx(filter: { frontmatter: { isHidden: { ne: true } } }) {
               edges {
                 node {
                   fields {
@@ -36,8 +36,8 @@ exports.createPages = ({ graphql, actions }) => {
             path: node.fields.slug ? node.fields.slug : "/",
             component: path.resolve("./src/templates/docs.js"),
             context: {
-              id: node.fields.id
-            }
+              id: node.fields.id,
+            },
           });
         });
       })
@@ -49,14 +49,14 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       modules: [path.resolve(__dirname, "src"), "node_modules"],
-      alias: { $components: path.resolve(__dirname, "src/components") }
-    }
+      alias: { $components: path.resolve(__dirname, "src/components") },
+    },
   });
 };
 
 exports.onCreateBabelConfig = ({ actions }) => {
   actions.setBabelPlugin({
-    name: "@babel/plugin-proposal-export-default-from"
+    name: "@babel/plugin-proposal-export-default-from",
   });
 };
 
@@ -74,19 +74,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       name: `slug`,
       node,
-      value: `/${value}`
+      value: `/${value}`,
     });
 
     createNodeField({
       name: "id",
       node,
-      value: node.id
+      value: node.id,
     });
 
     createNodeField({
       name: "title",
       node,
-      value: node.frontmatter.title || startCase(parent.name)
+      value: node.frontmatter.title || startCase(parent.name),
     });
   }
 };
