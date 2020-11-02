@@ -9,5 +9,4 @@ We're expanding our engineering team in Bangkok, Thailand. See the available job
 
 | Job Title             | Department  | Location          | Application Deadline | Link to Apply                                        |
 | --------------------- | ----------- | ----------------- | -------------------- | ---------------------------------------------------- |
-| Junior Rails Engineer | Engineering | Bangkok, Thailand | Dec 31, 2019         | [Learn More](/careers/bangkok/junior-rails-engineer) |
-| Senior Rails Engineer | Engineering | Bangkok, Thailand | Dec 31, 2019         | [Learn More](/careers/bangkok/senior-rails-engineer) |
+| Senior Rails Engineer | Engineering | Bangkok, Thailand | Nov 30, 2020         | [Learn More](/careers/bangkok/senior-rails-engineer) |
